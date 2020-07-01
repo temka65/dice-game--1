@@ -71,7 +71,7 @@ document.querySelector('.btn-hold').addEventListener("click", function() {
     document.getElementById("score-" + activePlayer).textContent = scores[activePlayer];
     diceDom.style.display = "none";
 
-    if (scores[activePlayer] > 10) {
+    if (scores[activePlayer] > 99) {
         isNewGame = false;
         document.getElementById("name-" + activePlayer).textContent = "Winnerr!!!";
         document.querySelector(".player-" + activePlayer + "-panel").classList.add("winner");
